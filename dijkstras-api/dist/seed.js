@@ -9,93 +9,97 @@ db_1.default.once('open', async () => {
     await City_1.default.deleteMany();
     const cities = [
         {
-            name: 'paris',
+            name: 'Flathead Lake',
             neighbors: [
-                { name: 'rome', distance: 10 },
-                { name: 'london', distance: 20 },
-                { name: 'miami', distance: 30 },
+                { name: 'Whitefish', distance: 32 },
+                { name: 'Strawberry Mountain', distance: 40 },
             ],
         },
         {
-            name: 'rome',
+            name: 'Strawberry Mountain',
             neighbors: [
-                { name: 'paris', distance: 10 },
-                { name: 'madrid', distance: 15 },
-                { name: 'tokyo', distance: 25 },
+                { name: 'Flathead Lake', distance: 40 },
+                { name: 'Hungry Horse', distance: 44 },
             ],
         },
         {
-            name: 'london',
+            name: 'Whitefish',
             neighbors: [
-                { name: 'paris', distance: 20 },
-                { name: 'miami', distance: 10 },
-                { name: 'sydney', distance: 40 },
+                { name: 'Flathead Lake', distance: 32 },
+                { name: 'Hungry Horse', distance: 25 },
+                { name: 'Lake McDonald', distance: 48 },
             ],
         },
         {
-            name: 'miami',
+            name: 'Hungry Horse',
             neighbors: [
-                { name: 'paris', distance: 30 },
-                { name: 'london', distance: 10 },
-                { name: 'quito', distance: 35 },
+                { name: 'Whitefish', distance: 25 },
+                { name: 'Lake McDonald', distance: 26 },
+                { name: 'Strawberry Mountain', distance: 44 },
             ],
         },
         {
-            name: 'madrid',
+            name: 'Lake McDonald',
             neighbors: [
-                { name: 'rome', distance: 15 },
-                { name: 'istanbul', distance: 12 },
-                { name: 'dubai', distance: 22 },
+                { name: 'Whitefish', distance: 48 },
+                { name: 'Hungry Horse', distance: 26 },
+                { name: 'Highline Trail', distance: 35 },
+                { name: 'Avalanche Lake', distance: 20 },
+                { name: 'Two Medicine Lake', distance: 88 },
             ],
         },
         {
-            name: 'tokyo',
+            name: 'Avalanche Lake',
             neighbors: [
-                { name: 'rome', distance: 25 },
-                { name: 'dubai', distance: 18 },
+                { name: 'Lake McDonald', distance: 20 },
+                { name: 'Logan Pass', distance: 40 },
             ],
         },
         {
-            name: 'sydney',
+            name: 'Highline Trail',
             neighbors: [
-                { name: 'london', distance: 40 },
-                { name: 'jerusalem', distance: 28 },
+                { name: 'Logan Pass', distance: 10 },
+                { name: 'Lake McDonald', distance: 35 },
+                { name: 'Iceberg Trail', distance: 84 },
             ],
         },
         {
-            name: 'quito',
+            name: 'Iceberg Trail',
             neighbors: [
-                { name: 'miami', distance: 35 },
-                { name: 'toronto', distance: 45 },
+                { name: 'Highline Trail', distance: 84 },
+                { name: 'Grinnell Glacier', distance: 169 },
             ],
         },
         {
-            name: 'istanbul',
+            name: 'Logan Pass',
             neighbors: [
-                { name: 'madrid', distance: 12 },
-                { name: 'jerusalem', distance: 20 },
+                { name: 'Highline Trail', distance: 10 },
+                { name: 'Avalanche Lake', distance: 40 },
+                { name: 'Virginia Falls', distance: 14 },
+                { name: 'Grinnell Glacier', distance: 12 },
             ],
         },
         {
-            name: 'dubai',
+            name: 'Grinnell Glacier',
             neighbors: [
-                { name: 'madrid', distance: 22 },
-                { name: 'tokyo', distance: 18 },
-                { name: 'toronto', distance: 30 },
+                { name: 'Iceberg Trail', distance: 169 },
+                { name: 'Logan Pass', distance: 12 },
+                { name: 'Virginia Falls', distance: 26 },
             ],
         },
         {
-            name: 'jerusalem',
+            name: 'Virginia Falls',
             neighbors: [
-                { name: 'sydney', distance: 28 },
-                { name: 'istanbul', distance: 20 },
+                { name: 'Logan Pass', distance: 14 },
+                { name: 'Grinnel Glacier', distance: 26 },
+                { name: 'Two Medicine Lake', distance: 68 },
             ],
         },
         {
-            name: 'toronto',
+            name: 'Two Medicine Lake',
             neighbors: [
-                { name: 'quito', distance: 45 },
-                { name: 'dubai', distance: 30 },
+                { name: 'Virginia Falls', distance: 68 },
+                { name: 'Lake McDonald', distance: 88 },
             ],
         },
     ];

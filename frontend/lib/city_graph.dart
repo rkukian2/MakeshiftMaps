@@ -16,7 +16,7 @@ class CityGraph extends StatelessWidget {
           SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
       itemCount: cityNames.length,
       itemBuilder: (context, index) {
-        final isInShortestPath = shortestPathSet.contains(cityNames);
+        final isInShortestPath = shortestPathSet.contains(cityNames[index]);
         return CityCard(
           cityName: cityNames[index],
           isInShortestPath: isInShortestPath,
