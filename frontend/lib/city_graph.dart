@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:frontend/city_card.dart';
 
+// represents a grid of cities, where each city is a card and cities in the shortest path are colored
 class CityGraph extends StatelessWidget {
   final List<String> cityNames;
   final List<String> shortestPathSet;
